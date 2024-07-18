@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #9d8a92;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #faf4f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 30, 101);
+}
+
+.section {
+    padding: 50px 10%;
+    display: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f8e4ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.details {
+    max-width: 50%;
+}
+
+.details h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.details span {
+    color: rgb(202, 15, 112);
+}
+
+.details p {
+    color: #555;
+    line-height: 22px;
+}
+
+.details a {
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: antiquewhite;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 100px;
+    display: flex;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    transform:translateX(-50%);
+    transition: bottom 1s , left 1s;
+}
+
+.hero:hover .shape {
+    bottom: 40px;
+}
+
+.hero:hover .girl {
+    left: 45%;
+}
+
+#about {
+    padding: 50px 10%;
+    background-color: #9d8a92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroabout {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f8e4ed; /* Same background color as home and contact sections */
+    display: flex;
+    padding: 30px 10%;
+}
+
+.detailsabout {
+    max-width: 50%; /* Same max-width as details and details2 */
+}
+
+.detailsabout h2 {
+    font-size: 50px; /* Same font size as details2 */
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.detailsabout p {
+    color: #555;
+    line-height: 22px; /* Same line-height as details and details2 */
+}
+
+.detailsabout h3 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+    color: #212121;
+}
+
+.detailsabout ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detailsabout ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.detailsabout ul li strong {
+    color: #333;
+}
+
+.images {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 8px;
+}
+
+#contact {
+    padding: 50px 10%;
+    background-color: #9d8a92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f8e4ed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.details2 {
+    max-width: 50%; 
+}
+
+.details2 h2 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.details2 p {
+    color: #555;
+    line-height: 22px; 
+}
+
+.details2 a {
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: antiquewhite;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background-color: #faf4f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-list a:hover {
+    color: rgb(171, 30, 101);
+    background-color: #f8e4ed;
+}
+
+.contact-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}

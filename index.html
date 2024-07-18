@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo" alt="Logo">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">HOME</a></li>
+            <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+            <li><a href="#" onclick="showSection('services')">SERVICES</a></li>
+            <li><a href="#" onclick="showSection('portfolio')">PORTFOLIO</a></li>
+            <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="section">
+        <div class="hero">
+            <div class="details">
+                <h1>I'm Salwa <span>Fayyad</span></h1>
+                <p>This is my official portfolio website to show 
+                    <br>details and work experience in web development.
+                </p>
+                <a href="Salwa_CV.pdf" download="Salwa_Fayyad_CV">DOWNLOAD CV</a>
+            </div>
+            <div class="images">
+                <img src="images/shape1.png" alt="Shape" class="shape">
+                <img src="images/salwa.png" alt="Salwa" class="girl">
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="heroabout">
+            <div class="detailsabout">
+            <h2>About Me</h2>
+            <p>I'm a 5th year student at Birzeit University <br>studying Computer & Electrical Engineering in the Faculty of Engineering Technology <br> located in Ramallah, Palestine. <br> I'm passionate about learning full stack development.</p>
+            <br>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java, C, Python , MySQL, Assembly , HTML , CSS, Verilog</li>
+                <li><strong>Software Development Tools:</strong> GitHub, NoteBook, Visual Studio Code, JetBrains IDEs, Docker (Beginning)</li>
+            </ul>
+            <br>
+            <h3>Languages</h3>
+            <ul>
+                <li>Native Arabic fluency</li>
+                <li>Good English skills</li>
+                <li>French (DELF Level A1)</li>
+            </ul>
+        </div>
+    
+        <div class="images">
+            <img src="images/bzu.png" alt="BZU">
+        </div>
+    </div>
+</div>
+
+
+    <div id="services" class="section">
+        <h2>My Services</h2>
+        <p>Soon...</p>
+    </div>
+
+
+    <div id="contact" class="section">
+        <div class="hero2">
+            <div class="details2">
+                <h2>Let's Contact</h2>
+                <p>Feel free to reach out to me through any of the following channels:</p>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://github.com/SalwaFayyad" target="_blank" rel="noopener noreferrer">
+                            <img src="images/github.png" alt="Github" class="contact-icon"> Github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/salwa-fayyad-a1981720b/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/linkedin.png" alt="Linkedin" class="contact-icon"> Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:salwafayad2003@gmail.com">
+                            <img src="images/gmail.png" alt="Email" class="contact-icon"> Gmail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/saloush" target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook.png" alt="Facebook" class="contact-icon"> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+0593200783">
+                            <img src="images/phone.png" alt="Phone" class="contact-icon"> Phone
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the home section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
