@@ -292,7 +292,7 @@ nav ul li a:hover {
     }
     
     nav .logo {
-        height: 60px; /* Adjusted for smaller screens */
+        height: 80px; /* Adjusted for smaller screens */
     }
     
     nav ul {
@@ -328,27 +328,49 @@ nav ul li a:hover {
     .images {
         width: 20%; /* Full width for mobile */
         height:40%; /* Full width for mobile */
+
     }
 
     .images img[alt="BZU"]  {
         width: auto; /* Adjust width as needed for mobile */
-        height: 50%; /* Maintain aspect ratio */
+        height: 60%; /* Maintain aspect ratio */
+        padding-right: 10%; /* Add padding on the right side */
+        padding-bottom: 20px; /* Add padding to the bottom */
+    }
+    .heroabout {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: flex-end; /* Align items to the right */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
     }
     
-    .heroabout, .hero2 {
+    .detailsabout {
+        max-width: 100%; /* Ensure full width for text content */
+        text-align: left; /* Align text to the left for readability */
+        margin-bottom: 20px; /* Space between text and image */
+        padding: 20px;
+        padding-right: 0;
+    }
+    
+    
+    .hero2 {
         flex-direction: row; /* Change to row layout */
         align-items: center; /* Align items centrally */
         height: auto;
         padding: 20px 5%;
     }
     
-    .detailsabout, .details2 {
+    .details2 {
         max-width: 50%; /* Adjust to fit layout */
         text-align: left; /* Align text to the left */
     }
     
     .detailsabout h2, .details2 h2 {
-        font-size: 32px; /* Adjusted for better readability on mobile */
+        font-size: 20px; /* Adjusted for better readability on mobile */
+    }
+    .detailsabout h3 {
+        font-size: 22px; /* Adjusted for better readability on mobile */
     }
     
     .contact-list {
