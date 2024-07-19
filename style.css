@@ -332,7 +332,7 @@ nav ul li a:hover {
 
     .images img[alt="BZU"]  {
         width: auto; /* Adjust width as needed for mobile */
-        height: 70%; /* Maintain aspect ratio */
+        height: 50%; /* Maintain aspect ratio */
     }
     
     .heroabout, .hero2 {
