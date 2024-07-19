@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
 
 body {
@@ -44,6 +45,8 @@ nav ul li a:hover {
 .section {
     padding: 50px 10%;
     display: none;
+    background-color: #9d8a92;
+
 }
 
 .hero {
@@ -255,4 +258,104 @@ nav ul li a:hover {
     width: 30px;
     height: auto;
     margin-right: 15px;
+}
+
+/* Media queries for phone screens */
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items for a better mobile experience */
+        width: 50%;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        width: 50%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .collapse {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        align-items: center; /* Center items for consistency */
+    }
+    
+    nav .logo {
+        height: 60px; /* Adjusted for smaller screens */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0; /* Remove default padding */
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 5%;
+    }
+    
+    .details {
+        max-width: 100%;
+        text-align: left; /* Align text to the left */
+        margin: 100; /* Ensure no extra margin */
+        padding-right: 0; /* Add padding on the right to ensure space for the image */
+    }
+    
+    .details h1 {
+        font-size: 32px; /* Adjusted for readability on smaller screens */
+    }
+    
+    .details p {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    .images {
+        width: 20%; /* Full width for mobile */
+        height:40%; /* Full width for mobile */
+    }
+
+    .images img[alt="BZU"]  {
+        width: auto; /* Adjust width as needed for mobile */
+        height: 70%; /* Maintain aspect ratio */
+    }
+    
+    .heroabout, .hero2 {
+        flex-direction: row; /* Change to row layout */
+        align-items: center; /* Align items centrally */
+        height: auto;
+        padding: 20px 5%;
+    }
+    
+    .detailsabout, .details2 {
+        max-width: 50%; /* Adjust to fit layout */
+        text-align: left; /* Align text to the left */
+    }
+    
+    .detailsabout h2, .details2 h2 {
+        font-size: 32px; /* Adjusted for better readability on mobile */
+    }
+    
+    .contact-list {
+        padding: 20px 5%;
+    }
+    
+    .contact-list a {
+        font-size: 14px; /* Adjusted for readability */
+    }
 }
